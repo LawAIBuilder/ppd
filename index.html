@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MN PPD Calculator — Simple Wizard</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="header">
+        <div>
+          <h1>MN PPD Calculator</h1>
+          <p class="subtitle">Simple “choose-your-own-adventure” questions → PPD % → estimated benefit amount.</p>
+        </div>
+        <div class="header-actions">
+          <button class="secondary" id="btnReset" type="button">Reset</button>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="card" id="card">
+          <!-- Wizard renders here -->
+        </section>
+      </main>
+
+      <footer class="footer">
+        <details>
+          <summary>Important disclaimer</summary>
+          <p>
+            This tool is for educational estimation only and is not legal advice or a medical impairment rating.
+            Minnesota PPD ratings must be determined under Minnesota Rules, and benefits depend on Minnesota Statutes.
+            If your claim is important, confirm with a qualified professional and the primary sources.
+          </p>
+        </details>
+      </footer>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
