@@ -40,9 +40,13 @@ python3 -m http.server 8000
 - In GitHub Pages settings, deploy from the repo root (or `/docs` if you move it).
 
 ### Vercel
-- Create a new Vercel project and point it at this repo.
-- Framework preset: **Other**
-- Output: static (no build step required).
+- **Git:** Push to your repo; if Vercel Git integration is enabled for [mncompbuddy/ppd](https://vercel.com/mncompbuddy/ppd), pushes to `main` will deploy automatically.
+- **CLI:** This repo is linked to the Vercel project **ppd** (mncompbuddy). From the project root run:
+  ```bash
+  vercel login   # once, if needed
+  vercel deploy --prod
+  ```
+  Framework: **Other**; output: static (no build step required).
 
 ## Add more rules
 
